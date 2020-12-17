@@ -40,6 +40,7 @@ export const ContentWrapper = styled.div`
   height: 100%;
   display: flex;
   padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const Title = styled.span`
@@ -47,16 +48,21 @@ export const Title = styled.span`
   font-size: 1.6rem;
 `;
 
-export const NavLink = styled.div`
+export const NavbarLink = styled.div`
   height: 50%;
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
 `;
 
-export const NavbarBtn = styled.span`
+export const StyledLink = styled.a`
   :hover {
     border-bottom: 5px solid #fff;
+    border-radius: 7px;
+  }
+  :active {
+    color: #537072;
+    border-bottom: 5px solid #537072;
     border-radius: 7px;
   }
 `;

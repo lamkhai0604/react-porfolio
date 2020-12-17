@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 //STYLES
 import {
   SidebarWrapper,
   Title,
-  NavLink,
-  NavbarBtn,
+  NavbarLink,
+  StyledLink,
 } from "../utils/styled-components";
 
 class Header extends Component {
@@ -13,20 +13,32 @@ class Header extends Component {
     return (
       <SidebarWrapper>
         <Title>My Porfolio</Title>
-        <NavLink>
-          <Link to="/" className="Navbar-text">
-            <NavbarBtn>Home</NavbarBtn>
-          </Link>
-          <Link to="/Home/AboutMe" className="Navbar-text">
-            <NavbarBtn>About Me</NavbarBtn>
-          </Link>
-          <Link to="/Home/MyProjects" className="Navbar-text">
-            <NavbarBtn>My Projects</NavbarBtn>
-          </Link>
-          <Link to="/Home/ContactMe" className="Navbar-text">
-            <NavbarBtn>Contact Me</NavbarBtn>
-          </Link>
-        </NavLink>
+        <NavbarLink>
+          <NavLink to="/" className="Navbar-text">
+            <StyledLink style={{}}>Home</StyledLink>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#8e9b97" }}
+            to="/Home/AboutMe"
+            className="Navbar-text"
+          >
+            <StyledLink>About Me</StyledLink>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#8e9b97" }}
+            to="/Home/MyProjects"
+            className="Navbar-text"
+          >
+            <StyledLink>My Projects</StyledLink>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#8e9b97" }}
+            to="/Home/ContactMe"
+            className="Navbar-text"
+          >
+            <StyledLink>Contact Me</StyledLink>
+          </NavLink>
+        </NavbarLink>
       </SidebarWrapper>
     );
   }
