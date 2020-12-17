@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { ContentWrapper } from "../../utils/styled-components";
+
 
 class ContactmePage extends Component {
     render() {
         return (
-            <div>
+            <ContentWrapper>
                 This's ContactMe
-            </div>
+            </ContentWrapper>
         );
     }
 }

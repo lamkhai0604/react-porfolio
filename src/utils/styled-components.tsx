@@ -12,12 +12,13 @@ export const SidebarWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color: #2c4a52;
   color: #fff;
 `;
 
 export const Container = styled.div`
   width: 88%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 `;
@@ -25,7 +26,20 @@ export const Container = styled.div`
 export const Header = styled.div`
   height: 4rem;
   padding: 1.2rem;
-  background-color: #f7f7f5;
+  background-color: #537072;
+`;
+
+export const BodyContainer = styled.div`
+  background-color: #8e9b97;
+  height: 100%;
+  padding: 3rem;
+`;
+
+export const ContentWrapper = styled.div`
+  background-color: #fcfaf5;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
 `;
 
 export const Title = styled.span`
@@ -37,4 +51,12 @@ export const NavLink = styled.div`
   height: 50%;
   display: flex;
   flex-direction: column;
+  font-size: 1.3rem;
+`;
+
+export const NavbarBtn = styled.span`
+  :hover {
+    border-bottom: 5px solid #fff;
+    border-radius: 7px;
+  }
 `;

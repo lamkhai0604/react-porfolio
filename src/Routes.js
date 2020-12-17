@@ -7,7 +7,12 @@ import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Breadcrumbs from "./utils/Breadcrumbs";
 //STYLES
-import { BodyWrapper, Container, Header } from "./utils/styled-components";
+import {
+  BodyWrapper,
+  Container,
+  Header,
+  BodyContainer,
+} from "./utils/styled-components";
 
 class Routes extends React.Component {
   render() {
@@ -19,26 +24,28 @@ class Routes extends React.Component {
           <Header>
             <Breadcrumbs />
           </Header>
-          <Switch>
-            <Route exact from="/" render={(props) => <Home {...props} />} />
-            <Route
-              exact
-              path="/Home/AboutMe"
-              render={(props) => <AboutMePage {...props} />}
-            />
-            <Route
-              exact
-              path="/Home/MyProjects"
-              render={(props) => <MyProjectsPage {...props} />}
-            />
-            <Route
-              exact
-              path="/Home/ContactMe"
-              render={(props) => <ContactMePage {...props} />}
-            />
-          </Switch>
+
+          <BodyContainer>
+            <Switch>
+              <Route exact from="/" render={(props) => <Home {...props} />} />
+              <Route
+                exact
+                path="/Home/AboutMe"
+                render={(props) => <AboutMePage {...props} />}
+              />
+              <Route
+                exact
+                path="/Home/MyProjects"
+                render={(props) => <MyProjectsPage {...props} />}
+              />
+              <Route
+                exact
+                path="/Home/ContactMe"
+                render={(props) => <ContactMePage {...props} />}
+              />
+            </Switch>
+          </BodyContainer>
         </Container>
-        
       </BodyWrapper>
     );
   }

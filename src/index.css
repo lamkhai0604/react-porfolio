@@ -21,3 +21,11 @@ code {
   color: #ffffff;
   text-decoration: none !important;
 }
+
+.MuiTypography-colorPrimary {
+  color: #fff !important;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: #fff !important;
+}

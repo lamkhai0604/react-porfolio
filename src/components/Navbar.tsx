@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 //STYLES
-import { SidebarWrapper, Title, NavLink } from "../utils/styled-components";
+import {
+  SidebarWrapper,
+  Title,
+  NavLink,
+  NavbarBtn,
+} from "../utils/styled-components";
 
 class Header extends Component {
   render() {
@@ -10,16 +15,16 @@ class Header extends Component {
         <Title>My Porfolio</Title>
         <NavLink>
           <Link to="/" className="Navbar-text">
-            Home
+            <NavbarBtn>Home</NavbarBtn>
           </Link>
           <Link to="/Home/AboutMe" className="Navbar-text">
-            About Me
+            <NavbarBtn>About Me</NavbarBtn>
           </Link>
           <Link to="/Home/MyProjects" className="Navbar-text">
-            My Projects
+            <NavbarBtn>My Projects</NavbarBtn>
           </Link>
           <Link to="/Home/ContactMe" className="Navbar-text">
-            Contact Me
+            <NavbarBtn>Contact Me</NavbarBtn>
           </Link>
         </NavLink>
       </SidebarWrapper>

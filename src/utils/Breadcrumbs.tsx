@@ -15,7 +15,8 @@ const Breadcrumbs = (props: any) => {
   return (
     <MUIBreadcrumbs aria-label="breadcrumb">
       {pathnames.length > 0 ? (
-        <Link onClick={() => history.push("/")}>Home</Link>
+        // <Link onClick={() => history.push("/")}>Home</Link>
+        null
       ) : (
         <Typography> Home </Typography>
       )}
