@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { ContentWrapper } from "../../utils/styled-components";
+import { ContentWrapper, HomeContentSide, Image } from "../../utils/styled-components";
 
 class Home extends Component {
   render() {
     return (
       <ContentWrapper>
-        <div>this is home page</div>
-        <div>this is home page</div>
-        <div>this is home page</div>
-        <div>this is home page</div>
+        <HomeContentSide>
+          <Image></Image>
+        </HomeContentSide>
+        <HomeContentSide>this is home page</HomeContentSide>
       </ContentWrapper>
     );
   }
