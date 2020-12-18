@@ -2,6 +2,7 @@ import React from "react";
 import AboutMePage from "./components/containers/AboutmePage";
 import MyProjectsPage from "./components/containers/ProjectsPage";
 import ContactMePage from "./components/containers/ContactmePage";
+import MySkillPage from "./components/containers/Myskillpage";
 import Home from "./components/containers/Home";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -37,6 +38,11 @@ class Routes extends React.Component {
                 exact
                 path="/Home/MyProjects"
                 render={(props) => <MyProjectsPage {...props} />}
+              />
+              <Route
+                exact
+                path="/Home/Skills"
+                render={(props) => <MySkillPage {...props} />}
               />
               <Route
                 exact

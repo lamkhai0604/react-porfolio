@@ -21,7 +21,10 @@ class Header extends Component {
             <NavbarBtn>About Me</NavbarBtn>
           </Link>
           <Link to="/Home/MyProjects" className="Navbar-text">
-            <NavbarBtn>My Projects</NavbarBtn>
+            <NavbarBtn>Projects</NavbarBtn>
+          </Link>
+          <Link to="/Home/Skills" className="Navbar-text">
+            <NavbarBtn>Skill</NavbarBtn>
           </Link>
           <Link to="/Home/ContactMe" className="Navbar-text">
             <NavbarBtn>Contact Me</NavbarBtn>
