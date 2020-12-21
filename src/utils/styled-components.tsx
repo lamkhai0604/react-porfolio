@@ -36,7 +36,7 @@ export const BodyContainer = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  background-color: #fcfaf5;
+  background-color: #f4ebdb;
   width: 100%;
   height: 100%;
   display: flex;
@@ -58,6 +58,7 @@ export const NavbarLink = styled.div`
 `;
 
 export const StyledLink = styled.span`
+  font-weight: bold;
   :hover {
     padding-bottom: 3px;
     border-bottom: 5px solid #fff;
@@ -71,15 +72,68 @@ export const StyledLink = styled.span`
 `;
 
 //HOME
-export const HomeContentSide = styled.div`
+export const HomeContentPart = styled.div`
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 `;
 
-export const Image = styled.img`
-  width: 25rem;
+export const ContentRightSide = styled(HomeContentPart)`
+  height: 23rem;
+  margin: auto;
+`;
+
+export const ContentLeftSide = styled(HomeContentPart)`
+  margin: auto;
+`;
+
+export const Image = styled.div`
   height: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
+`;
+
+export const HomeText = styled.p`
+  font-family: "Pacifico", cursive;
+  color: #2c4a52;
+`;
+
+export const Name = styled(HomeText)`
+  font-size: 1.8rem;
+  font-weight: bold;
+`;
+
+export const Position = styled(HomeText)`
+  font-size: 1.4rem;
+  font-weight: bold;
+`;
+
+export const Content = styled(HomeText)`
+  font-size: 1.2rem;
+`;
+
+//PROJECT
+export const Card = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20rem;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  transition: width 1s;
+  :hover {
+    width: 40rem;
+  }
+`;
+
+export const ProjectsBody = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const BodyLine = styled(ProjectsBody)`
+  flex-direction: row;
+  justify-content: space-between;
 `;
